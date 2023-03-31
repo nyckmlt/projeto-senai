@@ -1,0 +1,328 @@
+/* Feito por Manoel Moreira */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+/* ROOT DO SITE */
+:root{
+    --primary-color: #CBEBF5;
+    --secondary-color: #94C973;
+    --vermelhinho-color: ;
+    --text-color: #172317;
+    --bg-color: #fff;
+}
+
+::selection{
+    color: var(--bg-color);
+    background: var(--secondary-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%
+}
+
+section{
+    padding: 3rem 0 2rem;
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+a{
+    color: #fff;
+}
+
+/* HEADER */
+header{
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    transition: .5s;
+}
+
+header.shadow .logo{
+    color: var(--text-color);
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 330px;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.logo span{
+    color: var(--secondary-color);
+}
+
+.login{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background: var(--secondary-color);
+    color: var(--bg-color);
+}
+
+.login:hover{
+    background: #B2D2A4;
+    transition: .5s;
+}
+
+.home{
+    width: 100%;
+    
+    min-height: 440px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text{
+    color: var(--bg-color);
+    text-align: center;
+}
+
+.home-title{
+    font-size: 3.5rem;
+}
+
+.home-subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* FIM DA HEADER */
+
+/* Feito por Dominyck malta */
+/* COMEÇO DA MAIN */
+
+.about-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container .contentBx{
+    max-width: 50%;
+    width: 50%;
+    text-align: left;
+    padding-right: 40px;
+    padding-bottom: 100px;
+}
+
+.titleText{
+    font-weight: 600;
+    color: #111;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.title-text{
+    color: #111;
+    font-size: 1em;
+}
+
+.about .img-caixa{
+    position: relative;
+    min-width: 50%;
+    width: 50%;
+    min-height: 500px;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.post-box{
+    background: var(--bg-color);
+    box-shadow: 0 4px 14px hsl(35deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: 0.5rem;
+    
+}
+
+.post-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.post-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-description{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil-nome{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+/* FIM DA MAIN */
+
+/* Feito por Maria Clara Sampaio */
+/* COMEÇO DO FOOTER */
+
+.footer{
+    
+}
+
+hr{
+    position: absolute;
+    width: 1050px;
+    left: 432px;
+    top: 1450x;
+    border: 1px solid #000000;
+}
+
+.caixa{
+    position: absolute;
+    width: 1900px;
+    height: 179px;
+    left: 0px;
+    top: 1490px;
+    background: #E9EAE0;
+}
+
+.caixa1{
+    position: absolute;
+    width: 450px;
+    height: 123px;
+    left: 213px;
+    top: 48px;
+}
+
+.caixa1 .letra1{
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+
+}
+
+.caixa1 p{
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.caixa2{
+    position: absolute;
+    width: 630px;
+    height: 141px;
+    left: 616px;
+    top: 48px;
+}
+
+.caixa2 .letra2{
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.caixa2 p{
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.caixa3{
+    position: absolute;
+    width: 855px;
+    height: 129px;
+    left: 1025px;
+    top: 48px;
+}
+
+.caixa3 .letra3{
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+
+.caixa3 p{
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+/*FIM DO FOOTER */
